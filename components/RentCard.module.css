@@ -1,4 +1,4 @@
-.rent-card-container {
+.rentCardContainer {
   position: relative;
   width: 100%;
   height: 100%;
@@ -11,16 +11,16 @@
   overflow: hidden;
 }
 
-.rent-card-container a {
+.rentCardContainer a {
   text-decoration: none;
   color: unset;
 }
 
-.rent-card-container a:visited {
+.rentCardContainer a:visited {
   color: unset;
 }
 
-.price-range {
+.price-Range {
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
@@ -31,7 +31,7 @@
   border-radius: 0.25rem;
 }
 
-.left-arrow-rent-card {
+.leftArrowRentCard {
   position: absolute;
   top: 0;
   left: 1rem;
@@ -46,11 +46,11 @@
   transform: translateY(-50%);
 }
 
-.left-arrow-rent-card * {
+.leftArrowRentCard * {
   z-index: 2;
 }
 
-.right-arrow-rent-card {
+.rightArrowRentCard {
   position: absolute;
   top: 0;
   right: 1rem;
@@ -65,12 +65,12 @@
   transform: translateY(-50%);
 }
 
-.card-top {
+.cardTop {
   display: flex;
   width: 100%;
 }
 
-.rent-card-image-container {
+.rentCardImageContainer {
   width: 100%;
   padding-top: 60%;
   flex-shrink: 0;
@@ -81,26 +81,26 @@
   background-position-y: center;
 }
 
-.card-middle {
+.cardMiddle {
   padding: 1.25rem;
 }
 
-.card-middle small {
+.cardMiddle small {
   color: var(--text-4);
   font-weight: 700;
 }
 
-.card-middle h3 {
+.cardMiddle h3 {
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
   text-align: left;
 }
 
-.card-middle p {
+.cardMiddle p {
   color: var(--text-2);
 }
 
-.card-bottom {
+.cardBottom {
   margin-top: auto;
   display: flex;
   justify-content: space-between;
@@ -112,18 +112,18 @@
   line-height: 0;
 }
 
-.card-bottom div {
+.cardBottom div {
   display: flex;
   align-items: center;
 }
 
-.card-bottom i {
+.cardBottom i {
   height: 100%;
   width: auto;
   margin-right: 0.5rem;
 }
 
-.card-bottom i svg {
+.cardBottom i svg {
   height: 100%;
   width: auto;
 }

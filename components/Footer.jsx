@@ -1,23 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
     <footer>
-      <div className="container footer-1">
-        <section className="footer-contact">
+      <div className={`container ${styles.footer1}`}>
+        <section className={styles.footerContact}>
           <h4>Contact</h4>
           <p>
             Nous serions ravis d'échanger avec vous, n'hésitez pas à nous
             contacter pour toute demande.
           </p>
-          <Link to="/contact#form" className="btn">
+          <Link href="/contact#form" className="btn">
             Envoyer un message
           </Link>
         </section>
-        <section className="footer-adress">
+        <section className={styles.footerAdress}>
           <h4>Adresse</h4>
           <div>
             <p>
@@ -49,21 +48,21 @@ const Footer = () => {
           </div>
           <p></p>
         </section>
-        <section className="footer-links">
-          <Link to="/indreetloire">
+        <section className={styles.footerLinks}>
+          <Link href="/indreetloire">
             Conciergerie Airbnb Tours et Amboise (37)
           </Link>
-          <Link to="/tours">
+          <Link href="/tours">
             Conciergerie Airbnb à Tours en Indre-et-Loire (37)
           </Link>
-          <Link to="/amboise">
+          <Link href="/amboise">
             Conciergerie Airbnb à Amboise en Indre-et-Loire (37)
           </Link>
-          <Link to="/faq">F.A.Q (Foire Aux Questions)</Link>
+          <Link href="/faq">F.A.Q (Foire Aux Questions)</Link>
         </section>
       </div>
-      <div className="container footer-2">
-        <small className="petites-lignes">
+      <div className={`container ${styles.footer2}`}>
+        <small>
           © 2023 www.inbed.fr. Tous droits réservés.{" "}
           <a
             href="https://docs.google.com/document/d/e/2PACX-1vQW-xkOsJpgQm6oNTLoA9TJZ2t4pXYiT1Nwpj1kFrbR9NnfPcFpqCIhYjEqHwfglgFgcW4eaCqTkPBQ/pub"
@@ -81,7 +80,7 @@ const Footer = () => {
           </a>
           .
         </small>
-        <div className="social-network">
+        <div className={styles.socialNetwork}>
           <a
             href="https://www.facebook.com/InbedTours"
             target="_blank"

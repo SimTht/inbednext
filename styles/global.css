@@ -68,6 +68,55 @@ main section {
   }
 }
 
+header {
+  padding: 0.5rem 1rem;
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  transition: all 0.2s ease-in-out;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    height: 3.5rem;
+  }
+
+  header .container {
+    justify-content: space-between;
+  }
+}
+
+header * {
+  max-height: 5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-2);
+  padding: 0 15px;
+  color: var(--text-3);
+}
+
+footer section {
+  width: 30%;
+}
+
 h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;

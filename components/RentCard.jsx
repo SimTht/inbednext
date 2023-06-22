@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-import "./RentCard.css";
+import styles from "./RentCard.module.css";
 
 const RentCard = ({ rent }) => {
   const [cardImgIndex, setCardImgIndex] = useState(0);
@@ -24,16 +24,16 @@ const RentCard = ({ rent }) => {
   };
 
   return (
-    <div className="rent-card-container">
-      <div className="price-range">
+    <div className={styles.rentCardContainer}>
+      <div className={styles.priceRange}>
         <strong>
           {rent.price[0]} € → {rent.price[1]}
         </strong>{" "}
         € / nuit
       </div>
-      <div className="card-top">
+      <div className={styles.cardTop}>
         <div
-          className="left-arrow-rent-card"
+          className={styles.leftArrowRentCard}
           onClick={() => handleArrowClickCard("left")}
         >
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +59,7 @@ const RentCard = ({ rent }) => {
             href={rent.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="rent-card-image-container"
+            className={styles.rentCardImageContainer}
             style={{
               transform: `translate(-${cardImgIndex * 100}%)`,
               backgroundImage: `url(${image})`,
@@ -74,7 +74,7 @@ const RentCard = ({ rent }) => {
           </a>
         ))}
         <div
-          className="right-arrow-rent-card"
+          className={styles.rightArrowRentCard}
           onClick={() => handleArrowClickCard("right")}
         >
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -96,7 +96,7 @@ const RentCard = ({ rent }) => {
           </svg>
         </div>
       </div>
-      <div className="card-middle">
+      <div className={styles.cardMiddle}>
         <small>{rent.city}</small>
         <a href={rent.link} target="_blank" rel="noopener noreferrer">
           <h3>{rent.name}</h3>
@@ -105,7 +105,7 @@ const RentCard = ({ rent }) => {
           <p>{rent.short}</p>
         </a>
       </div>
-      <div className="card-bottom">
+      <div className={styles.cardBottom}>
         <div>
           <i>
             <svg

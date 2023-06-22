@@ -1,76 +1,40 @@
-header {
-  padding: 0.5rem 1rem;
-  display: flex;
-  height: 5rem;
-  justify-content: center;
-
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  transition: all 0.2s ease-in-out;
-}
-
-header .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-@media screen and (max-width: 1200px) {
-  header {
-    height: 3.5rem;
-  }
-
-  header .container {
-    justify-content: space-between;
-  }
-}
-
-header * {
-  max-height: 5rem;
-}
-
-.logo-header {
+.logoHeader {
   height: 2.5rem;
   margin-right: 1rem;
 }
 
-.nav-list {
+.navList {
   margin-left: auto;
 }
 
-.nav-list ul {
+.navList ul {
   display: flex;
   justify-content: end;
   list-style: none;
 }
 
 @media screen and (max-width: 1200px) {
-  .nav-list {
+  .navList {
     display: none;
   }
 }
 
-.nav-list-item > * {
+.navListItem > * {
   color: var(--text-1);
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
-.nav-list-item a:hover {
+.navListItem a:hover {
   color: var(--text-4);
 }
 
-.burger-menu {
+.burgerMenu {
   display: none;
   cursor: pointer;
 }
 
-.side-menu {
+.sideMenu {
   display: flex;
   flex-direction: row-reverse;
   position: fixed;
@@ -85,7 +49,7 @@ header * {
   transition: all 3s ease-in-out 300;
 }
 
-.side-menu ul {
+.sideMenu ul {
   max-width: 100vw;
   width: 25rem;
   display: flex;
@@ -96,11 +60,11 @@ header * {
   background-color: var(--main-2);
 }
 
-.side-menu li {
+.sideMenu li {
   margin-bottom: 1rem;
 }
 
-.close-side-menu-cross {
+.closeSideMenuCross {
   display: none;
   position: absolute;
   top: 0;
@@ -113,11 +77,11 @@ header * {
 }
 
 @media screen and (max-width: 1200px) {
-  .burger-menu {
+  .burgerMenu {
     display: initial;
   }
 
-  .close-side-menu-cross {
+  .closeSideMenuCross {
     display: initial;
   }
 }

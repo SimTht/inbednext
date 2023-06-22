@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-import "./TopRates.css";
-import reviews from "../data/reviews.json";
+import styles from "./TopRates.module.css";
+import reviews from "../public/data/reviews.json";
 
 function TopRates() {
   const numberOfReviews = reviews.length;
@@ -26,11 +26,11 @@ function TopRates() {
   };
 
   return (
-    <div className="top-rates-container">
+    <div className={styles.topRatesContainer}>
       <svg
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
-        className="left-arrow-rate"
+        className={styles.leftArrowRate}
         onClick={() => handleArrowClick("left")}
       >
         <g id="SVGRepo_bgCarrier" strokeWidth="0" />
@@ -50,18 +50,18 @@ function TopRates() {
         </g>
       </svg>
       <div
-        className="top-rate-boxes-container container"
+        className={styles.topRateBoxesContainer}
         style={{ transform: `translate(-${rateIndex * 110}%)` }}
       >
         {reviews.map((review, i) => (
-          <div className="top-rate-box" key={i}>
+          <div className={styles.topRateBox} key={i}>
             <div>
               {Array(5)
                 .fill()
                 .map((_, index) => (
                   <svg
                     key={index}
-                    className="stars"
+                    className={styles.stars}
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -82,7 +82,7 @@ function TopRates() {
       <svg
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
-        className="right-arrow-rate"
+        className={styles.rightArrowRate}
         onClick={() => handleArrowClick("right")}
       >
         <g id="SVGRepo_bgCarrier" />
@@ -102,7 +102,7 @@ function TopRates() {
         </g>
       </svg>
 
-      <div className="dot-selector">
+      <div className={styles.dotSelector}>
         {[...Array(numberOfReviews)].map((e, i) => (
           <div
             key={i}

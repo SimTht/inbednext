@@ -1,4 +1,4 @@
-.top-rates-container {
+.topRatesContainer {
   position: relative;
   width: 100%;
   display: flex;
@@ -6,28 +6,28 @@
   justify-content: center;
 }
 
-.left-arrow-rate {
+.leftArrowRate {
   width: 4rem;
   cursor: pointer;
   fill: var(--color-1);
   z-index: 3;
 }
 
-.right-arrow-rate {
+.rightArrowRate {
   width: 4rem;
   cursor: pointer;
   fill: var(--color-1);
   z-index: 3;
 }
 
-.top-rate-boxes-container {
+.topRateBoxesContainer {
   display: flex;
   width: 100%;
   gap: 10%;
   transition: transform 0.6s;
 }
 
-.top-rate-box {
+.topRateBox {
   width: 100%;
   margin: 0 auto;
   padding: 1.5rem;
@@ -42,7 +42,7 @@
   flex-shrink: 0;
 }
 
-.top-rate-box div {
+.topRateBox div {
   margin-top: auto;
 }
 
@@ -55,14 +55,14 @@
   margin: auto 0.25rem;
 }
 
-.top-rate-box p {
+.topRateBox p {
   margin: 1rem auto 1rem;
   font-size: 1.25rem;
   font-style: italic;
   text-align: center;
 }
 
-.top-rate-box small {
+.topRateBox small {
   color: var(--text-2);
   margin-bottom: auto;
 }
@@ -75,7 +75,7 @@
   cursor: pointer;
 }
 
-.dot-selector div {
+.dotSelector div {
   width: 2rem;
   height: 2rem;
   display: flex;
@@ -85,11 +85,11 @@
 }
 
 @media screen and (max-width: 668px) {
-  .top-rate-boxes-container {
+  .topRateBoxesContainer {
     width: calc(100vw - 8rem);
   }
 
-  .top-rate-box p {
+  .topRateBox p {
     font-size: 1rem;
   }
 }

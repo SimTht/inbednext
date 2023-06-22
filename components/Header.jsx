@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
-import "./Header.css";
+import styles from "./Header.module.css";
 
-import logo from "../assets/logo-header.png";
+import logo from "../public/assets/logo-header.png";
 
 function Header() {
   const [activateSideMenu, setActivateSideMenu] = useState(false);
@@ -12,7 +13,7 @@ function Header() {
   };
 
   const [isTransparent, setIsTransparent] = useState(true);
-  const location = useLocation();
+  const location = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,12 +45,14 @@ function Header() {
       }
     >
       <div className="container">
-        <Link to="/">
-          <img src={logo} className="logo-header" alt="logo" />
+        <Link href="/">
+          <img src={logo} className={styles.logoHeader} alt="logo" />
         </Link>
 
         <nav
-          className={`nav-list ${activateSideMenu ? "side-menu" : ""}`}
+          className={`${styles.navList} ${
+            activateSideMenu ? styles.sideMenu : ""
+          }`}
           onClick={(event) => {
             if (
               (typeof event.target.className === "string" &&
@@ -61,7 +64,7 @@ function Header() {
           }}
         >
           <button
-            className="close-side-menu-cross"
+            className={styles.closeSideMenuCross}
             onClick={() => {
               setActivateSideMenu(false);
             }}
@@ -83,9 +86,9 @@ function Header() {
             </svg>
           </button>
           <ul>
-            <li className="nav-list-item">
+            <li className={styles.navListItem}>
               <Link
-                to="/"
+                href="/"
                 style={
                   isTransparent && !activateSideMenu
                     ? { color: "var(--text-3)" }
@@ -95,7 +98,7 @@ function Header() {
                 Accueil
               </Link>
             </li>
-            <li className="nav-list-item">
+            <li className={styles.navListItem}>
               <a
                 href="https://www.airbnb.fr/users/479186120/listings"
                 target="_blank"
@@ -110,9 +113,9 @@ function Header() {
               </a>
             </li>
 
-            <li className="nav-list-item">
+            <li className={styles.navListItem}>
               <Link
-                to="/contact"
+                href="/contact"
                 style={
                   isTransparent && !activateSideMenu
                     ? { color: "var(--text-3)" }
@@ -123,9 +126,9 @@ function Header() {
               </Link>
             </li>
 
-            <li className="nav-list-item">
+            <li className={styles.navListItem}>
               <Link
-                to="/about"
+                href="/about"
                 style={
                   isTransparent && !activateSideMenu
                     ? { color: "var(--text-3)" }
@@ -138,7 +141,7 @@ function Header() {
           </ul>
         </nav>
 
-        <div className="burger-menu" onClick={burgerClick}>
+        <div className={styles.burgerMenu} onClick={burgerClick}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -157,7 +160,7 @@ function Header() {
 
         <a
           href="https://app.superhote.com/#/login"
-          className="btn landlord-portal"
+          className={`btn ${styles.landlordPortal}`}
           target="_blank"
           rel="noopener noreferrer"
         >
