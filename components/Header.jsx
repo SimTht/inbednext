@@ -4,8 +4,6 @@ import Link from "next/link";
 
 import styles from "./Header.module.css";
 
-import logo from "../public/assets/logo-header.png";
-
 function Header() {
   const [activateSideMenu, setActivateSideMenu] = useState(false);
   const burgerClick = () => {
@@ -46,7 +44,11 @@ function Header() {
     >
       <div className="container">
         <Link href="/">
-          <img src={logo} className={styles.logoHeader} alt="logo" />
+          <img
+            src="/assets/logo-header.png"
+            className={styles.logoHeader}
+            alt="logo"
+          />
         </Link>
 
         <nav

@@ -5,14 +5,15 @@ import TopRates from "../components/TopRates";
 
 import styles from "./Home.module.css";
 
-import carrousel1 from "../public/assets/carrousel/1.webp";
-import carrousel2 from "../public/assets/carrousel/2.webp";
-import carrousel3 from "../public/assets/carrousel/3.webp";
-import carrousel4 from "../public/assets/carrousel/4.webp";
 import rents from "../public/data/rentals.json";
 
 export default function Home() {
-  const carrouselPaths = [carrousel1, carrousel2, carrousel3, carrousel4];
+  const carrouselPaths = [
+    "/assets/carrousel/1.webp",
+    "/assets/carrousel/2.webp",
+    "/assets/carrousel/3.webp",
+    "/assets/carrousel/4.webp",
+  ];
   const [currentCarrouselIndex, setCurrentCarrouselIndex] = useState(0);
 
   useEffect(() => {
