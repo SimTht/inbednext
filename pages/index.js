@@ -3,7 +3,7 @@ import Link from "next/link";
 import RentCard from "../components/RentCard";
 import TopRates from "../components/TopRates";
 
-import styles from "./Home.module.css";
+import styles from "./index.module.css";
 
 import rents from "../public/data/rentals.json";
 
