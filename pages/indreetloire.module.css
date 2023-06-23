@@ -1,0 +1,40 @@
+.indreetloireContainer {
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: justify;
+}
+
+.indreetloireContainer h2 {
+  text-align: left;
+  margin: 1.5rem 0;
+  font-weight: 500;
+}
+
+.indreetloireContainer h3 {
+  text-align: left;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.indreetloireContainer p {
+  margin-bottom: 1rem;
+}
+
+.indreetloireContainer a {
+  text-decoration: none;
+  color: var(--text-4);
+}
+
+.indreetloireContainer a:hover {
+  text-decoration: underline;
+}
+
+.indreetloireContainerBtn {
+  color: var(--text-3);
+}
+
+.indreetloireContainer img {
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
