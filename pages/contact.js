@@ -52,7 +52,7 @@ const InfoContact = () => {
                 <strong>
                   détails des réservations, nombre de voyageurs, loyers perçus,…
                 </strong>{" "}
-                C’est simple, rapide et pratique&nbsp;!
+                C’est simple, rapide et pratique!
               </p>
             </div>
             <div>
@@ -75,7 +75,7 @@ const InfoContact = () => {
             className={styles.right}
           />
         </div>
-        <a href="#anchor-form" className="btn">
+        <a href="#anchor-form" className={`${styles.infoContactIntroBtn} btn`}>
           Contactez Inbed dès maintenant
         </a>
       </section>
@@ -116,7 +116,7 @@ const InfoContact = () => {
               <h3>ACCUEIL PERSONNALISÉ DANS VOTRE LOCATION 24/7</h3>
               <p>
                 {" "}
-                Notre personnel<strong>Inbed</strong>accompagne les voyageurs
+                Notre personnel<strong> Inbed </strong>accompagne les voyageurs
                 tout au long de leur séjour dans votre{" "}
                 <Link href="/contact#form">
                   location Airbnb à Tours et Amboise.
