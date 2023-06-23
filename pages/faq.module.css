@@ -1,0 +1,45 @@
+.faqContainer {
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: justify;
+}
+
+.faqContainer h2 {
+  text-align: left;
+  margin: 1.5rem 0;
+  font-weight: 500;
+}
+
+.faqContainer h3 {
+  text-align: left;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.faqContainer p {
+  margin-bottom: 1rem;
+}
+
+.faqContainer a:not(.btn) {
+  text-decoration: none;
+  color: var(--text-4);
+}
+
+.faqContainer a:hover {
+  text-decoration: underline;
+}
+
+.faqContainerBtn {
+  margin: 1.5rem 0;
+  color: var(--text-3);
+}
+
+.faqContainer img {
+  margin-bottom: 1rem;
+}
+
+.faqContainer ul {
+  list-style: disc;
+  padding-left: 2.5rem;
+}
