@@ -1,0 +1,40 @@
+.toursContainer {
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: justify;
+}
+
+.toursContainer h2 {
+  text-align: left;
+  margin: 1.5rem 0;
+  font-weight: 500;
+}
+
+.toursContainer h3 {
+  text-align: left;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.toursContainer p {
+  margin-bottom: 1rem;
+}
+
+.toursContainer a {
+  text-decoration: none;
+  color: var(--text-4);
+}
+
+.toursContainer a:hover {
+  text-decoration: underline;
+}
+
+.toursContainer .btn {
+  color: var(--text-3);
+}
+
+.toursContainer img {
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
