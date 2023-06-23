@@ -1,0 +1,168 @@
+.infoContactTitle {
+  text-align: center;
+}
+
+.infoContactIntro div {
+  display: flex;
+  margin: auto;
+}
+
+.infoContactIntro p a {
+  color: var(--text-4);
+  text-decoration: none;
+}
+
+.infoContactIntro a:hover {
+  text-decoration: underline;
+}
+
+.infoContactIntro .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  width: 40%;
+  text-align: center;
+}
+
+.infoContactIntro .left div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.infoContactIntro img {
+  padding: 0 1rem;
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+.infoContactIntro .btn {
+  display: block;
+  margin: 1rem auto 0;
+}
+
+@media screen and (max-width: 768px) {
+  .infoContactIntro div {
+    flex-direction: column;
+  }
+
+  .infoContactIntro div * {
+    width: 100%;
+    max-width: none;
+  }
+
+  .infoContactIntro .left {
+    width: 100%;
+  }
+}
+
+.infoContactPrestations {
+  display: flex;
+  justify-content: center;
+}
+
+.infoContactPrestations a {
+  color: var(--text-4);
+  text-decoration: none;
+}
+
+.infoContactPrestations a:hover {
+  text-decoration: underline;
+}
+
+.infoContactPrice {
+  display: flex;
+}
+
+.infoContactPrice img {
+  padding: 0 1rem;
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+.infoContactPrice div {
+  width: 40%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.infoContactPrice p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+#textCommission {
+  text-align: center;
+}
+
+.commission {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--color-3);
+}
+
+.infoContactPrice u {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .infoContactPrice {
+    flex-direction: column;
+  }
+
+  .infoContactPrice img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .infoContactPrice div {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.infoContactLocationRange {
+  text-align: center;
+  margin: 0 auto 6rem;
+}
+
+.contactFormSection h2 {
+  position: relative;
+  margin: 0 auto 2rem;
+}
+
+.contactFormBottom {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: start;
+}
+
+.contactFormBottom h3 {
+  text-align: left;
+}
+
+.contactFormBottom p {
+  margin-bottom: 1.5rem;
+}
+
+.contactFormInfos {
+  flex: 0 0 auto;
+  padding: 0 1rem;
+}
+
+.contactFormContainer {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contactFormBottom {
+    flex-direction: column;
+  }
+}

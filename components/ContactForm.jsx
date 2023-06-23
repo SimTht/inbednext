@@ -2,7 +2,7 @@ import { useState, useCallback } from "react";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 
-import "./ContactForm.css";
+import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
   const [captchaToken, setCaptchaToken] = useState("");
@@ -60,12 +60,12 @@ const ContactForm = () => {
   };
 
   return (
-    <form className="contact-form" onSubmit={sendEmail}>
-      <div className="contact-details">
+    <form className={styles.contactForm} onSubmit={sendEmail}>
+      <div className={styles.contactdetails}>
         <label htmlFor="name">Nom *</label>
         <input
           type="text"
-          id="name"
+          id={styles.name}
           placeholder="Nom"
           name="name"
           value={formData.name}
@@ -74,7 +74,7 @@ const ContactForm = () => {
         <label htmlFor="email">Email *</label>
         <input
           type="email"
-          id="email"
+          id={styles.email}
           placeholder="Email"
           name="email"
           value={formData.email}
@@ -84,7 +84,7 @@ const ContactForm = () => {
         <label htmlFor="phone">Téléphone</label>
         <input
           type="tel"
-          id="phone"
+          id={styles.phone}
           placeholder="Téléphone"
           name="phone"
           value={formData.phone}
@@ -93,17 +93,17 @@ const ContactForm = () => {
         <label htmlFor="country">Pays</label>
         <input
           type="text"
-          id="country"
+          id={styles.country}
           placeholder="Pays"
           name="country"
           value={formData.country}
           onChange={handleChange}
         />
       </div>
-      <div className="contact-form-message">
+      <div className={styles.contactFormMessage}>
         <label htmlFor="message"> Message *</label>
         <textarea
-          id="message"
+          id={styles.message}
           placeholder="Your message"
           name="message"
           value={formData.message}
@@ -111,11 +111,11 @@ const ContactForm = () => {
         ></textarea>
       </div>
 
-      <div className="contact-form-validation">
+      <div className={styles.contactFormValidation}>
         <label>
           <input
             type="checkbox"
-            id="rgpd"
+            id={styles.rgpd}
             name="rgpd"
             checked={formData.rgpd}
             onChange={() => setFormData({ ...formData, rgpd: !formData.rgpd })}
