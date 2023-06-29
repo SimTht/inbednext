@@ -42,7 +42,7 @@ export default function Home() {
         ))}
         <div className={styles.carouselFilter}>
           <div className={styles.carouselText}>
-            <h3>Trouver votre location de vacences en Touraine</h3>
+            <h3>Trouvez votre location de vacances en Touraine</h3>
             <h1>Conciergerie Airbnb à Tours et Amboise</h1>
           </div>
         </div>
