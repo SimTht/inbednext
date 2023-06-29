@@ -30,8 +30,8 @@
   text-decoration: underline;
 }
 
-.amboiseContainer .btn {
-  color: var(--text-3);
+.amboiseContainerBtn {
+  color: var(--text-3) !important;
 }
 
 .amboiseContainer img {

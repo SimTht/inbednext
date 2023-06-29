@@ -30,8 +30,8 @@
   text-decoration: underline;
 }
 
-.toursContainer .btn {
-  color: var(--text-3);
+.toursContainerBtn {
+  color: var(--text-3) !important;
 }
 
 .toursContainer img {

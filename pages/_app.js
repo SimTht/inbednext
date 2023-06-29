@@ -7,9 +7,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>
-          Inbed - Conciergerie BNB - Gestion en location courte durée
-        </title>
+        <title>Conciergerie Airbnb à Tours et Amboise (37) - Inbed</title>
         <link rel="icon" href="/favicon.png" />
         <meta
           name="description"
